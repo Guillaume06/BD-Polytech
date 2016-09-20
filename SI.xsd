@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="si" type="siType"/>
+  <xs:complexType name="siType">
+    <xs:sequence>
+      <xs:element type="annéesType" name="années"/>
+      <xs:element type="étudiantsType" name="étudiants"/>
+      <xs:element type="enseignantsType" name="enseigneants"/>
+      <xs:element type="sallesType" name="salles"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="annéesType">
+    <xs:sequence>
+      <xs:element type="annéeType" name="année" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="annéeType">
+    <xs:sequence>
+      <xs:element type="enseignementsType" name="enseignement" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="date-iso" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="enseignantsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="enseignant" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sallesType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="salle" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+
+</xs:schema>
