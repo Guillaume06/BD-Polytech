@@ -14,9 +14,10 @@
         <!ELEMENT étudiants (étudiant+)>
         <!ELEMENT étudiant EMPTY>
         <!ATTLIST étudiant
-                name #REQUIRED
+                nom #REQUIRED
+                prénom  #REQUIRED
                 année (SI3 | SI4 | SI5) #REQUIRED
-                spécialisation (AL | CASPAR | GMD | IAM | IHM | IMAFA | WEB)#REQUIRED>
+                filière (AL | CASPAR | GMD | IAM | IHM | IMAFA | WEB)#REQUIRED>
 
         <!ELEMENT enseignants (enseignant+)>
         <!ELEMENT enseignant (#PCDATA)>

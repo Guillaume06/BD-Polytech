@@ -3,6 +3,7 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <xs:element name="si" type="siType"/>
+
   <xs:complexType name="siType">
     <xs:sequence>
       <xs:element type="annéesType" name="années"/>
@@ -14,29 +15,57 @@
 
   <xs:complexType name="annéesType">
     <xs:sequence>
-      <xs:element type="annéeType" name="année" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="annéeType" name="année" minOccurs="1" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="annéeType">
     <xs:sequence>
-      <xs:element type="enseignementsType" name="enseignement" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="enseignementsType" name="enseignements"/>
     </xs:sequence>
-    <xs:attribute type="xs:string" name="date-iso" use="optional"/>
+    <xs:attribute name="type" type="xs:string" use="required"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="enseignementsType">
+    <xs:sequence>
+      <xs:element type="enseignementType" name="enseignement" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="enseignementType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="matière"/>
+      <xs:element type="xs:string" name="date"/>
+      <xs:element type="xs:string" name="salle"/>
+      <xs:element type="xs:string" name="enseignant"/>
+    </xs:sequence>
+    <xs:attribute name="filière" type="xs:string" use="required"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="étudiantsType">
+    <xs:sequence>
+      <xs:element type="étudiantType" name="étudiant" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="étudiantType">
+    <xs:attribute name="année" type="xs:string" use="required"></xs:attribute>
+    <xs:attribute name="nom" type="xs:string" use="required"></xs:attribute>
+    <xs:attribute name="prénom" type="xs:string" use="required"></xs:attribute>
+    <xs:attribute name="filière" type="xs:string" use="required"></xs:attribute>
   </xs:complexType>
 
   <xs:complexType name="enseignantsType">
     <xs:sequence>
-      <xs:element type="xs:string" name="enseignant" maxOccurs="unbounded" minOccurs="1"/>
+      <xs:element type="xs:string" name="enseignant" minOccurs="1" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="sallesType">
     <xs:sequence>
-      <xs:element type="xs:string" name="salle" maxOccurs="unbounded" minOccurs="1"/>
+      <xs:element type="xs:string" name="salle" minOccurs="1" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 
-
-
 </xs:schema>
+
