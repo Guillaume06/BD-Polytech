@@ -1,0 +1,28 @@
+
+<!ELEMENT SI (années, étudiants, enseignants, salles)>
+
+        <!ELEMENT années (année+)>
+        <!ELEMENT année (enseignements)>
+        <!ATTLIST année
+                type (SI3 | SI4 | SI5) #REQUIRED>
+
+        <!ELEMENT enseignements (enseignement+)>
+        <!ELEMENT enseignement (matière, date, salle, enseignant)>
+        <!ATTLIST enseignement
+                filière (AL | CASPAR | GMD | IAM | IHM | IMAFA | WEB | enseignement_général) #REQUIRED>
+
+        <!ELEMENT étudiants (étudiant+)>
+        <!ELEMENT étudiant EMPTY>
+        <!ATTLIST étudiant
+                name #REQUIRED
+                année (SI3 | SI4 | SI5) #REQUIRED
+                spécialisation (AL | CASPAR | GMD | IAM | IHM | IMAFA | WEB)#REQUIRED>
+
+        <!ELEMENT enseignants (enseignant+)>
+        <!ELEMENT enseignant (#PCDATA)>
+
+        <!ELEMENT salles (salle+)>
+        <!ELEMENT salle (#PCDATA)>
+
+        <!ELEMENT matière (#PCDATA)>
+        <!ELEMENT date (#PCDATA)>
