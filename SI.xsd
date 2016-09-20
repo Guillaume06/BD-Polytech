@@ -52,7 +52,7 @@
     <xs:attribute name="année" type="xs:string" use="required"></xs:attribute>
     <xs:attribute name="nom" type="xs:string" use="required"></xs:attribute>
     <xs:attribute name="prénom" type="xs:string" use="required"></xs:attribute>
-    <xs:attribute name="filière" type="xs:string" use="required"></xs:attribute>
+    <xs:attribute name="filière" type="xs:string"></xs:attribute>
   </xs:complexType>
 
   <xs:complexType name="enseignantsType">

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone='no'?>
+
+<!DOCTYPE cv SYSTEM "SI.dtd">
+
+<si xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="SI.xsd">
+
+    <années>
+        <année type="SI3">
+            <enseignements>
+                <enseignement filière="">
+                    <matière></matière>
+                    <date></date>
+                    <salle></salle>
+                    <enseignant></enseignant>
+                </enseignement>
+            </enseignements>
+        </année>
+        <année type="SI4">
+            <enseignements>
+                <enseignement filière="">
+                    <matière></matière>
+                    <date></date>
+                    <salle></salle>
+                    <enseignant></enseignant>
+                </enseignement>
+            </enseignements>
+        </année>
+        <année type="SI5">
+            <enseignements>
+                <enseignement filière="">
+                    <matière></matière>
+                    <date></date>
+                    <salle></salle>
+                    <enseignant></enseignant>
+                </enseignement>
+            </enseignements>
+        </année>
+    </années>
+
+    <étudiants>
+        <étudiant année="SI3" nom="Barathéon" prénom="Robert"></étudiant>
+        <étudiant année="SI3" nom="Barathéon" prénom="Stannis"></étudiant>
+        <étudiant année="SI4" nom="Stark" prénom="Sansa"></étudiant>
+        <étudiant année="SI4" nom="Stark" prénom="Arya"></étudiant>
+        <étudiant année="SI5" nom="Barathéon" prénom="Joeffrey" filière="CASPAR"></étudiant>
+        <étudiant année="SI5" nom="Lannister" prénom="Tyrion" filière="AL"></étudiant>
+        <étudiant année="SI5" nom="Lannister" prénom="Jaime" filière="WEB"></étudiant>
+        <étudiant année="SI5" nom="Lannister" prénom="Cersei" filière="IMAFA"></étudiant>
+    </étudiants>
+
+    <enseigneants>
+        <enseignant>M Dupond</enseignant>
+        <enseignant>Mme Dupont</enseignant>
+        <enseignant>Mme Dupond</enseignant>
+        <enseignant>M Dupont</enseignant>
+        <enseignant>Mlle Dupond</enseignant>
+        <enseignant>Mlle Dupont</enseignant>
+        <enseignant>M Tupont</enseignant>
+        <enseignant>Mme Tupond</enseignant>
+    </enseigneants>
+
+    <salles>
+        <salle>S-200</salle>
+        <salle>S-100</salle>
+        <salle>E-200</salle>
+        <salle>E-100</salle>
+        <salle>E+100</salle>
+        <salle>O+100</salle>
+        <salle>O+200</salle>
+        <salle>O+300</salle>
+    </salles>
+
+</si>

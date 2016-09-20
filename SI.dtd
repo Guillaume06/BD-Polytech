@@ -17,7 +17,7 @@
                 nom #REQUIRED
                 prénom  #REQUIRED
                 année (SI3 | SI4 | SI5) #REQUIRED
-                filière (AL | CASPAR | GMD | IAM | IHM | IMAFA | WEB)#REQUIRED>
+                filière (AL | CASPAR | GMD | IAM | IHM | IMAFA | WEB)>
 
         <!ELEMENT enseignants (enseignant+)>
         <!ELEMENT enseignant (#PCDATA)>
