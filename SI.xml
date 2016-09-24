@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone='no'?>
 
-<!DOCTYPE cv SYSTEM "SI.dtd">
+<!DOCTYPE si SYSTEM "SI.dtd">
 
 <si xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="SI.xsd">
@@ -8,31 +8,67 @@
     <années>
         <année type="SI3">
             <enseignements>
-                <enseignement filière="">
-                    <matière></matière>
-                    <date></date>
+                <enseignement filière="enseignement_général">
+                    <matière>SSII</matière>
+                    <date>23.03.16</date>
                     <salle></salle>
-                    <enseignant></enseignant>
+                    <enseignant>M Dupond</enseignant>
+                </enseignement>
+                <enseignement filière="enseignement_général">
+                    <matière>BDR</matière>
+                    <date>23.04.16</date>
+                    <salle></salle>
+                    <enseignant>Mme Dupont</enseignant>
+                </enseignement>
+                <enseignement filière="enseignement_général">
+                    <matière>COO</matière>
+                    <date>23.05.16</date>
+                    <salle></salle>
+                    <enseignant>Mme Dupond</enseignant>
                 </enseignement>
             </enseignements>
         </année>
         <année type="SI4">
             <enseignements>
-                <enseignement filière="">
-                    <matière></matière>
-                    <date></date>
+                <enseignement filière="enseignement_général">
+                    <matière>Concurrence</matière>
+                    <date>23.03.16</date>
                     <salle></salle>
-                    <enseignant></enseignant>
+                    <enseignant>M Dupont</enseignant>
+                </enseignement>
+                <enseignement filière="enseignement_général">
+                    <matière>Compilation</matière>
+                    <date>23.04.16</date>
+                    <salle></salle>
+                    <enseignant>Mlle Dupond</enseignant>
+                </enseignement>
+                <enseignement filière="enseignement_général">
+                    <matière>Anglais</matière>
+                    <date>23.05.16</date>
+                    <salle></salle>
+                    <enseignant>Mlle Dupont</enseignant>
                 </enseignement>
             </enseignements>
         </année>
         <année type="SI5">
             <enseignements>
-                <enseignement filière="">
-                    <matière></matière>
-                    <date></date>
+                <enseignement filière="enseignement_général">
+                    <matière>Anglais</matière>
+                    <date>23.03.16</date>
                     <salle></salle>
-                    <enseignant></enseignant>
+                    <enseignant>M Tupont</enseignant>
+                </enseignement>
+                <enseignement filière="GMD">
+                    <matière>Data</matière>
+                    <date>23.04.16</date>
+                    <salle></salle>
+                    <enseignant>Mlle Dupond</enseignant>
+                </enseignement>
+                <enseignement filière="AL">
+                    <matière>Strucutre</matière>
+                    <date>23.05.16</date>
+                    <salle></salle>
+                    <enseignant>Mlle Dupond</enseignant>
                 </enseignement>
             </enseignements>
         </année>

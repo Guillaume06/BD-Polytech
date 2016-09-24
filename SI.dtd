@@ -1,5 +1,5 @@
 
-<!ELEMENT SI (années, étudiants, enseignants, salles)>
+<!ELEMENT si (années, étudiants, enseignants, salles)>
 
         <!ELEMENT années (année+)>
         <!ELEMENT année (enseignements)>
